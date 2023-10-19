@@ -1,10 +1,20 @@
-export default function Home() {
-  const count = 0;
+import fs from "fs/promises";
+import { revalidatePath } from "next/cache";
+
+export default async function Home() {
+  const counter = (await fs.readFile("./counter.txt")).toString();
+
   return (
-    <main>
-      <form action="">
-        <button type="submit">{count}</button>
-      </form>
-    </main>
+    <form action={UpdateCounter}>
+      <button type="submit">{counter}</button>
+    </form>
   );
+}
+
+async function UpdateCounter() {
+  "use server";
+
+  const counter = (await fs.readFile("./counter.txt")).toString();
+  await fs.writeFile("./counter.txt", `${parseInt(counter) + 1}`);
+  revalidatePath("/");
 }
