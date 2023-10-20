@@ -1,13 +1,17 @@
 import fs from "fs/promises";
 import { revalidatePath } from "next/cache";
+import { Timer } from "./Timer";
 
 export default async function Home() {
   const counter = (await fs.readFile("./counter.txt")).toString();
 
   return (
-    <form action={UpdateCounter}>
-      <button type="submit">{counter}</button>
-    </form>
+    <main>
+      <Timer />
+      <form action={UpdateCounter}>
+        Counter: <button type="submit">{counter}</button>
+      </form>
+    </main>
   );
 }
 
