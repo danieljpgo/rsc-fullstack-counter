@@ -37,10 +37,7 @@ The project was created to recreate [basic React counter examples](https://react
 
 A counter that is updated every time a button is clicked, with the data being derived from the server. The timer exists to demonstrate that the client-side state persists. Also, with javascript disabled the functionality continues to work.
 
-&nbsp;
-
 https://github.com/danieljpgo/rsc-server-counter/assets/37938090/493a371a-6a38-4850-9fd5-1a9661748c57
-
 
 ## Technologies
 
