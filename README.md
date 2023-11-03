@@ -39,11 +39,8 @@ A counter that is updated every time a button is clicked, with the data being de
 
 &nbsp;
 
-<div align="center">
-  <video width="740" controls>
-    <source src=".github/demo.mp4" type="video/mp4">
-  </video>    
-</div>
+https://github.com/danieljpgo/rsc-server-counter/assets/37938090/493a371a-6a38-4850-9fd5-1a9661748c57
+
 
 ## Technologies
 
