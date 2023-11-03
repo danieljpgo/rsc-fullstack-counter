@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# RSC Server Counter
+
+<p align="left">
+   <a href="https://github.com/danieljpgo">
+      <img
+        alt="author"
+        src="https://img.shields.io/badge/author-danieljpgo-1b263b?style=flat&labelColor=2f4858"
+      />
+   </a>
+   <img
+      alt="languages"
+      src="https://img.shields.io/github/languages/count/danieljpgo/rsc-server-counter?color=1b263b&style=flat&labelColor=2f4858"
+   />
+   <a href="https://github.com/danieljpgo/rsc-server-counter/graphs/contributors">
+      <img
+        alt="contributors"
+        src="https://img.shields.io/github/stars/danieljpgo/rsc-server-counter?color=1b263b&style=flat&labelColor=2f4858"/>
+   </a>
+    <a href="https://github.com/danieljpgo/rsc-server-counter/network/members">
+      <img
+         alt="forks"
+         src="https://img.shields.io/github/forks/danieljpgo/rsc-server-counter?color=1b263b&style=flat&labelColor=2f4858"/>
+   </a>
+     <img alt="License" src="https://img.shields.io/badge/license-MIT-1b263b?style=flat&labelColor=2f4858">
+</p>
+
+> Your basic counter example, but React Server Components and Server Actions
+
+## Project
+
+The project was created to recreate [basic React counter examples](https://react.dev/learn#updating-the-screen) used to represent client-side state, but with a server-driven approach using React Server Components and Server Actions.
+
+- [React Server Components](https://react.dev/blog/2023/03/22/react-labs-what-we-have-been-working-on-march-2023#react-server-components)
+- [Server Action](https://react.dev/reference/react-dom/components/form#handle-form-submission-with-a-server-action)
+
+## Demo
+
+A counter that is updated every time a button is clicked, with the data being derived from the server. The timer exists to demonstrate that the client-side state persists. Also, with javascript disabled the functionality continues to work.
+
+&nbsp;
+
+<div align="center">
+  <video width="740" controls>
+    <source src=".github/demo.mp4" type="video/mp4">
+  </video>    
+</div>
+
+## Technologies
+
+The main technologies used to develop the project were:
+
+- [React](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+
+This project was bootstrapped with:
+
+- [create-next-app](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
 
 ## Getting Started
 
-First, run the development server:
+First of all, you may clone this project:
+
+```bash
+git clone https://github.com/danieljpgo/rsc-server-counter.git
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## License
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This project is under the [MIT license](https://github.com/danieljpgo/rsc-server-counter/blob/master/LICENSE).
 
-## Learn More
+<div>Released in 2023.</div>
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Make by [Daniel Jorge](https://github.com/danieljpgo)
